@@ -5,6 +5,9 @@ This folder contains datasets and R-code corresponding to the report "Estimating
 The folder is structured as follows:
 - File bear_track.csv contains the telemetry locations of the bear.
 - File bear_habitat.csv contains two environmental covariates within the bear habitat.
+- File gray.colors.rev.R provides a function to generate grayscale color vector when plotting.
+- File draw.contour.R provides a function to draw contour lines for datasets.
+- File draw.contour.2.R provides a function similar to the function in draw.contour.R.
 - File stpp_rsf_helper.R provides functions for the construction of the quadrature points and the space-time point process model.
 - File run_bear_analysis.R analyzes RSF of the bear data with the space-time model.
 - File plot.R plots the bear data and the model fitting results.
@@ -19,7 +22,12 @@ Then, please download the datasets:
 - bear_track.csv
 - bear_habitat.csv
 
-Afterwards, please download all the R files and run them in the following order to reproduce the results:
+Afterwards, please download and run the following files: 
+- gray.colors.rev.R
+- draw.contour.R
+- draw.contour.2.R
+
+In order to reproduce the results, please download the rest R files and run them in the following order:
 - stpp_rsf_helper.R
 - run_bear_analysis.R (estimated runtime: 20min)
 - plots.R
